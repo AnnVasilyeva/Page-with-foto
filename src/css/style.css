@@ -1,0 +1,143 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+    line-height: 24px;
+    font-family: "Arial", sans-serif;
+    background-color: #fff;
+
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+p {
+    margin-bottom: 0;
+}
+
+.container {
+    width: 800px;
+    margin: 0 auto;
+}
+
+.menu {
+    margin-top: 100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.menu_item {
+    color: cornflowerblue;
+    text-transform: uppercase;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.menu_item:hover, .item:hover {
+    color: #286ce6;
+}
+
+.main_container {
+    width: 510px;
+    margin: 50px auto 0;
+}
+
+
+.catalog_item {
+    background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M8.59 16.59L13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.41z"/></svg>') no-repeat left top;
+}
+
+.open {
+    background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6-6-6 1.41-1.41z"/></svg>') no-repeat left top;
+}
+
+.user_name, .album_name {
+    margin-left: 30px;
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+
+
+.user_album {
+    margin-left: 20px;
+}
+
+
+.user_photo_list {
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+    margin: 0 120px 20px 0;
+
+
+}
+
+
+.user_photo {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 20px;
+}
+
+.user_photo:last-child {
+    margin-bottom: 0;
+}
+
+.star {
+    width: 24px;
+    height: 24px;
+    margin-right: 30px;
+    cursor: pointer;
+
+    background-color: #000;
+    -webkit-mask:  url('../image/star_rate-24px.svg') no-repeat left top;
+    mask: url('../image/star_rate-24px.svg') no-repeat left top;
+
+}
+
+.star_checked {
+    background-color: gold;
+}
+
+
+
+
+.photo {
+    width: 150px;
+    cursor: pointer;
+    color: #000;
+}
+
+
+.photo img {
+    width: 150px;
+    height: 150px;
+    cursor: pointer;
+}
+
+.photo_big {
+    width: 600px;
+    height: 600px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    z-index: 1000;
+}
+
+.favorite {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.hidden {
+    display: none;
+}
